@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:icon="@drawable/_8498358491571183079"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/addProductFragment"
+        android:icon="@drawable/_269554541547546467"
+        android:title="Add Product"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/orderFragment"
+        android:icon="@drawable/_343179461574330916"
+        android:title="Order"
+        tools:ignore="HardcodedText" />
+
+</menu>
