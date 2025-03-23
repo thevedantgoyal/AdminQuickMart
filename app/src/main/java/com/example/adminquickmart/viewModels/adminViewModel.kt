@@ -129,11 +129,12 @@ class adminViewModel : ViewModel() {
 
 
     fun getOrderedProducts(orderId : String) : Flow<List<cartProducts>> = callbackFlow{
-        val db = FirebaseDatabase.getInstance().getReference("Admins").child("Orders").child("orderId")
+        val db = FirebaseDatabase.getInstance().getReference("Admins").child("Orders").child(orderId)
         val eventListener = object  : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 val order = snapshot.getValue(Orders::class.java)
-                trySend(order?.orderList!!)
+                val productList = order?.orderList ?: emptyList()
+                trySend(productList)
 
             }
 

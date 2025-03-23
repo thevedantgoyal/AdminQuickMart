@@ -16,7 +16,7 @@
         android:elevation="4.0dp"
         android:paddingStart="@dimen/_14sdp"
         android:background="@color/yellow"
-        >
+        tools:ignore="MissingClass">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 app:hintTextColor="@color/yellow"
                 android:layout_marginTop="20.0dp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
-                >
+                tools:ignore="MissingClass">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/productTitleTxt"
                     android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                         app:endIconMode="clear_text"
                         app:hintTextColor="@color/yellow"
                         android:layout_marginEnd="2.60dp"
-                        >
+                        tools:ignore="MissingClass">
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/quantityTxt"
                             android:layout_width="match_parent"
@@ -131,7 +131,7 @@
                         android:layout_marginStart="@dimen/_6sdp"
                         app:hintTextColor="@color/yellow"
 
-                        >
+                        tools:ignore="MissingClass">
 
                         <AutoCompleteTextView
                             android:id="@+id/unitTxt"
@@ -171,7 +171,7 @@
                     app:endIconMode="clear_text"
                     app:hintTextColor="@color/yellow"
                     android:layout_marginEnd="2.60dp"
-                    >
+                    tools:ignore="MissingClass">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/priceTxt"
                         android:layout_width="match_parent"
@@ -199,7 +199,7 @@
                     app:endIconMode="clear_text"
                     app:hintTextColor="@color/yellow"
 
-                    >
+                    tools:ignore="MissingClass">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/noOfStockTxt"
                         android:layout_width="match_parent"
@@ -230,7 +230,7 @@
                 app:startIconDrawable="@drawable/_4291991451579780443"
                 app:startIconTint="@color/black"
                 android:layout_marginHorizontal="@dimen/_20sdp"
-                >
+                tools:ignore="MissingClass">
 
                 <AutoCompleteTextView
                     android:id="@+id/productCategory"
@@ -260,7 +260,7 @@
                 app:startIconDrawable="@drawable/_4291991451579780443"
                 app:startIconTint="@color/black"
                 android:layout_marginHorizontal="@dimen/_20sdp"
-                >
+                tools:ignore="MissingClass">
 
                 <AutoCompleteTextView
                     android:id="@+id/productstype"
@@ -315,7 +315,7 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:orientation="horizontal"
                 tools:listitem="@layout/item_view_image"
-                />
+                tools:ignore="MissingClass" />
 
 
             <com.google.android.material.button.MaterialButton
@@ -332,7 +332,7 @@
                 android:textSize="@dimen/_16ssp"
                 app:cornerRadius="10.44dp"
                 android:textAllCaps="false"
-                />
+                tools:ignore="MissingClass" />
 
         </LinearLayout>
     </ScrollView>
